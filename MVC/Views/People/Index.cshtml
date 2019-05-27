@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<h2>People Controller, Index</h2>
+@Ajax.ActionLink("All People","GetAllPeople",new AjaxOptions
+{
+
+ UpdateTargetId="div1",InsertionMode=InsertionMode.Replace,HttpMethod="Get"}) |
+
+@Ajax.ActionLink("Male People","GetMalePeople",new AjaxOptions
+{
+
+ UpdateTargetId="div1",InsertionMode=InsertionMode.Replace,HttpMethod="Get"}) |
+
+@Ajax.ActionLink("Female People","GetFemalePeople",new AjaxOptions
+{
+
+ UpdateTargetId="div1",InsertionMode=InsertionMode.Replace,HttpMethod="Get"}) |
+<div id="div1"></div>

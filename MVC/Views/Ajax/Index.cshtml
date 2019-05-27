@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<h2>Ajaz Demo</h2>
+<h1>Example-01</h1>
+@Ajax.ActionLink("Show Server Time","GetServerTime",new AjaxOptions
+{
+    UpdateTargetId = "div1",
+    InsertionMode = InsertionMode.Replace,
+    HttpMethod = "Get"
+})
+<div id="div1"></div>

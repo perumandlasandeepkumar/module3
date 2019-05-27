@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "UserLogin";
+}
+
+<h2>UserLogin</h2>
+@using (Html.BeginForm())
+{
+<div class="container">
+    <div class="col-lg-4 jumbotron">
+        <div class="form-group">
+            <input type="text"
+                   name="uname"
+                   class="form-control" placeholder="User Name">
+        </div>
+        <div class="form-group">
+            <input type="password"
+                   name="pwd" class="form-control" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label for=""><input type="checkbox">Remember Me</label>
+        </div>
+        <button type="submit" class="btn btn-primary form-control">Login</button>
+    </div>
+</div>
+}
